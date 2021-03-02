@@ -16,3 +16,7 @@ textarea{
 #result td {
   border: 1px solid #000;
 }
+
+.class {
+  opacity: 0;
+}
