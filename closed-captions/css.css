@@ -29,7 +29,7 @@ Feel free to adjust the defaults to your needs.
 /* Robot */
 .voice1 {
 	font-family: "Brenner Mono";
-	color: white;
+	color: rgb(157, 200, 159);
 }
 
 /* Officer K D 6 - 3 . 7. */
@@ -43,8 +43,11 @@ Feel free to adjust the defaults to your needs.
 	font-family: "Brenner Sans";
 }
 
+
 /* Officer */
-.voice4 {}
+.voice4 {
+	
+}
 
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -57,7 +60,6 @@ You probably want to change the styling.
 .p0 span {
 	opacity: 0;
 	font-family: "Brenner Mono Regular Italic";
-	color: white;
 }
 
 /*Officer*/
@@ -144,7 +146,6 @@ You probably want to change the styling.
 .p1 span {
 	opacity: 0;
 	font-family: "Brenner Sans";
-	color: white;
 }
 
 /*Yes,*/
@@ -171,7 +172,6 @@ You probably want to change the styling.
 .p2 span {
 	opacity: 0;
 	font-family: "Brenner Mono Regular Italic";
-	color: white;
 }
 
 /*Recite*/
@@ -196,7 +196,6 @@ You probably want to change the styling.
 .p3 span {
 	opacity: 0;
 	font-family: "Brenner Sans";
-	color: white;
 	transition: 0s;
 }
 
@@ -247,7 +246,6 @@ You probably want to change the styling.
 .p4 span {
 	opacity: 0;
 	font-family: "Brenner Sans";
-	color: white;
 	transition: 0s;
 }
 
@@ -297,7 +295,6 @@ You probably want to change the styling.
 .p5 span {
 	opacity: 0;
 	font-family: "Brenner Sans";
-	color: white;
 	transition: 0s;
 }
 
@@ -348,32 +345,42 @@ You probably want to change the styling.
 	opacity: 0;
 	font-family: "Brenner Sans";
 	color: #F5D547;
-	transition: 0s;
+	font-size: 0.5em;
 }
 
 /*Fuck*/
 .p6.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
+	font-size: 1em;
 }
 
 /*off*/
 .p6.on span:nth-of-type(2) {
 	opacity: 1;
 	/* transition: 0s 0.3s; */
+	font-size: 1em;
+
 }
 
 /*skin-job!*/
 .p6.on span:nth-of-type(3) {
 	opacity: 1;
 	/* transition: 0s 0.5s; */
+	font-size: 1em;
+}
+
+/*skin-job!*/
+.p6.on span:nth-of-type(4) {
+	opacity: 1;
+	/* transition: 0s 0.5s; */
+	font-size: 1em;
 }
 
 /* ********************************************* */
 .p7 span {
 	opacity: 0;
 	font-family: "Brenner Sans";
-	color: white;
 	transition: 0s;
 }
 
@@ -455,7 +462,6 @@ You probably want to change the styling.
 .p8 span {
 	opacity: 0;
 	font-family: "Brenner Mono";
-	color: white;
 	transition: 0s;
 }
 
@@ -469,7 +475,6 @@ You probably want to change the styling.
 .p9 span {
 	opacity: 0;
 	font-family: "Brenner Sans";
-	color: white;
 	transition: 0s;
 }
 
@@ -483,7 +488,6 @@ You probably want to change the styling.
 .p10 span {
 	opacity: 0;
 	font-family: "Brenner Mono";
-	color: white;
 	transition: 0s;
 }
 
@@ -549,31 +553,58 @@ body {
 	text-align: center;
 }
 
-p.bijtekst {
-	color: red;
+
+.texts {
+	height: 3em;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	transition: 0.5s;
+	font-size: 1em;
 }
 
-/* seconde ALARM 10 */
 p.alarm {
 	opacity: 0;
+	position: absolute;
+	font-family: "Brenner Sans Bold";
+	color: #C1292E;
+	top: -40px;
+	transition: 0.5s;
 }
 
 p.noice {
 	opacity: 0;
-	display: none;
+	position: absolute;
+	transition: 0.5s;
 }
 
-/* .alarm iframe {
-	background-color: yellow;
-} */
+p.siren {
+	opacity: 0;
+	position: absolute;
+	font-family: "Brenner Sans Bold";
+	color: #1145ee;
+	top: -40px;
+	transition: 0.5s;
+}
+
+p.siren {
+	opacity: 0;
+}
+
+p.action {
+	opacity: 1;
+	color: white;
+}
+
+.sound1 p.action {
+	opacity: 0;
+	transition: 0.3s;
+}
 
 /* seconde 9 */
 .sound1 p.alarm {
 	opacity: 1;
 	transition: 1s;
-
-	font-family: "Brenner Sans Bold";
-	color: #C1292E;
 	font-size: 1.8em;
 }
 
@@ -594,13 +625,33 @@ p.noice {
 	box-shadow: none;
 }
 
-/* seconde 15.3 */
+/* seconde 12 */
 .sound5 iframe {
+	box-shadow: rgb(21, 62, 245)0px 0px 50px;
+}
+
+.sound5 p.siren {
+	font-size: 1.8em;
+	opacity: 1;
+}
+
+/* seconde 13 */
+.sound6 iframe {
+	box-shadow: none;
+}
+
+.sound6 p.siren {
+	opacity: 0;
+	font-size: 1.4em;
+}
+
+/* seconde 15.3 */
+.sound7 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 30px;
 }
 
 /* seconde 15.3 */
-.sound5 p.alarm {
+.sound7 p.alarm {
 	opacity: 1;
 	transition: 1s;
 
@@ -610,7 +661,7 @@ p.noice {
 }
 
 /* seconde 16.3 */
-.sound6 iframe {
+.sound8 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 150px;
 	animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
 	transform: translate3d(0, 0, 0);
@@ -664,23 +715,40 @@ p.noice {
 }
 
 /* seconde 17 */
-.sound7 p.alarm {
+.sound9 p.alarm {
 	opacity: 0;
 	transition: 0.5s;
 	font-size: 1.4em;
 }
 
 /* seconde 17 */
-.sound7 iframe {
+.sound9 iframe {
 	box-shadow: none;
 }
 
+.sound10 .voice3 {
+	animation: biggertext 1s;
+	animation-iteration-count: 1;
+}
+
+@keyframes biggertext {
+
+	0% {
+		font-size: 0em;
+	}
+
+	100%
+	{
+		font-size: 1em;
+	}
+}
+
 /* seconde 24.5 */
-.sound8 iframe {
+.sound11 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 30px;
 }
 
-.sound8 p.alarm {
+.sound11 p.alarm {
 	opacity: 1;
 	transition: 1s;
 
@@ -690,7 +758,7 @@ p.noice {
 }
 
 /* seconde 25.5 */
-.sound9 iframe {
+.sound12 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 150px;
 	animation: shake2 0.82s cubic-bezier(.36, .07, .19, .97) both;
 	transform: translate3d(0, 0, 0);
@@ -744,23 +812,23 @@ p.noice {
 }
 
 /* seconde 26.2 */
-.sound10 iframe {
+.sound13 iframe {
 	box-shadow: none;
 }
 
 /* seconde 26.2 */
-.sound10 p.alarm {
+.sound13 p.alarm {
 	opacity: 0;
 	transition: 0.5s;
 	font-size: 1.4em;
 }
 
 /* seconde 24.5 */
-.sound11 iframe {
+.sound14 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 30px;
 }
 
-.sound11 p.alarm {
+.sound14 p.alarm {
 	opacity: 1;
 	transition: 1s;
 
@@ -770,7 +838,7 @@ p.noice {
 }
 
 /* seconde 25.5 */
-.sound12 iframe {
+.sound15 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 150px;
 	animation: shake3 0.82s cubic-bezier(.36, .07, .19, .97) both;
 	transform: translate3d(0, 0, 0);
@@ -824,12 +892,12 @@ p.noice {
 }
 
 /* seconde 26.2 */
-.sound13 iframe {
+.sound16 iframe {
 	box-shadow: none;
 }
 
 /* seconde 26.2 */
-.sound13 p.alarm {
+.sound16 p.alarm {
 	opacity: 0;
 	transition: 0.5s;
 	font-size: 1.4em;
@@ -840,17 +908,17 @@ p.noice {
 
 /* seconde 33 */
 
-.sound14 p.alarm {
+.sound17 p.alarm {
 	display: none;
 }
 
-.sound14 p.noice {
+.sound17 p.noice {
 	display: block;
 }
 
-.sound14 p.noice {
+.sound17 p.noice {
 	opacity: 1;
-	transition: 1s;
+	transition: 0.5s;
 
 	font-family: "Brenner Sans";
 	color: white;
@@ -858,7 +926,7 @@ p.noice {
 }
 
 /* seconde 33 */
-.sound14 iframe {
+.sound17 iframe {
 	animation: shake4 5s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 2;
 	transform: translate3d(0, 0, 0);
@@ -879,7 +947,7 @@ p.noice {
 	75%,
 	85%,
 	95% {
-		transform: translate3d(-1px, 0, 0);
+		transform: translate3d(-2px, 0, 0);
 	}
 
 	0%,
@@ -893,12 +961,33 @@ p.noice {
 	80%,
 	90%,
 	100% {
-		transform: translate3d(1px, 0, 0);
+		transform: translate3d(2px, 0, 0);
+	}
+}
+
+.sound17 {
+	transition: 1s;
+	background: linear-gradient(90deg, #0f1318 0%, #22272e 45%, white 50%, #22272e 55%, #0f1318 100%);
+	background-size: 400% 400%;
+	animation: leftright 5s ease;
+	animation-iteration-count: infinite;
+}	
+
+@keyframes leftright {
+
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
 	}
 }
 
 /* seconde 4 3 */
-.sound15 iframe {
+.sound18 iframe {
 	animation: shake5 2s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 3;
 	transform: translate3d(0, 0, 0);
@@ -906,6 +995,14 @@ p.noice {
 	perspective: 1000px;
 	transition: 0.7s;
 }
+
+.sound18 {
+	transition: 1s;
+	background: linear-gradient(90deg, #0f1318 0%, #22272e 45%, white 50%, #22272e 55%, #0f1318 100%);
+	background-size: 400% 400%;
+	animation: leftright 4s ease;
+	animation-iteration-count: infinite;
+}	
 
 @keyframes shake5 {
 
@@ -919,7 +1016,7 @@ p.noice {
 	75%,
 	85%,
 	95% {
-		transform: translate3d(-2px, 0, 0);
+		transform: translate3d(-4px, 0, 0);
 	}
 
 	0%,
@@ -933,12 +1030,12 @@ p.noice {
 	80%,
 	90%,
 	100% {
-		transform: translate3d(2px, 0, 0);
+		transform: translate3d(4px, 0, 0);
 	}
 }
 
 /* seconde 49 */
-.sound16 iframe {
+.sound19 iframe {
 	animation: shake6 1.8s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 5;
 	transform: translate3d(0, 0, 0);
@@ -946,6 +1043,14 @@ p.noice {
 	perspective: 1000px;
 	transition: 0.7s;
 }
+
+.sound19 {
+	transition: 1s;
+	background: linear-gradient(90deg, #0f1318 0%, #22272e 45%, white 50%, #22272e 55%, #0f1318 100%);
+	background-size: 400% 400%;
+	animation: leftright 3s ease;
+	animation-iteration-count: infinite;
+}	
 
 @keyframes shake6 {
 
@@ -959,7 +1064,7 @@ p.noice {
 	75%,
 	85%,
 	95% {
-		transform: translate3d(-2px, 0, 0);
+		transform: translate3d(-4px, 0, 0);
 	}
 
 	0%,
@@ -973,12 +1078,12 @@ p.noice {
 	80%,
 	90%,
 	100% {
-		transform: translate3d(2px, 0, 0);
+		transform: translate3d(4px, 0, 0);
 	}
 }
 
 /* seconde 58 */
-.sound17 iframe {
+.sound20 iframe {
 	animation: shake7 0.7s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 8;
 	transform: translate3d(0, 0, 0);
@@ -986,6 +1091,14 @@ p.noice {
 	perspective: 1000px;
 	transition: 0.7s;
 }
+
+.sound20 {
+	transition: 1s;
+	background: linear-gradient(90deg, #0f1318 0%, #22272e 40%, white 50%, #22272e 60%, #0f1318 100%);
+	background-size: 400% 400%;
+	animation: leftright 2s ease;
+	animation-iteration-count: infinite;
+}	
 
 @keyframes shake7 {
 
@@ -999,7 +1112,7 @@ p.noice {
 	75%,
 	85%,
 	95% {
-		transform: translate3d(-3px, 0, 0);
+		transform: translate3d(-6px, 0, 0);
 	}
 
 	0%,
@@ -1013,12 +1126,12 @@ p.noice {
 	80%,
 	90%,
 	100% {
-		transform: translate3d(3px, 0, 0);
+		transform: translate3d(6px, 0, 0);
 	}
 }
 
 /* seconde 63.6 */
-.sound18 iframe {
+.sound21 iframe {
 	animation: shake8 0.7s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 8;
 	transform: translate3d(0, 0, 0);
@@ -1026,6 +1139,14 @@ p.noice {
 	perspective: 1000px;
 	transition: 0.7s;
 }
+
+.sound21 {
+	transition: 1s;
+	background: linear-gradient(90deg, #0f1318 0%, #22272e 40%, white 50%, #22272e 60%, #0f1318 100%);
+	background-size: 400% 400%;
+	animation: leftright 1s ease;
+	animation-iteration-count: infinite;
+}	
 
 @keyframes shake8 {
 
@@ -1039,7 +1160,7 @@ p.noice {
 	75%,
 	85%,
 	95% {
-		transform: translate3d(-3px, 0, 0);
+		transform: translate3d(-6px, 0, 0);
 	}
 
 	0%,
@@ -1053,12 +1174,12 @@ p.noice {
 	80%,
 	90%,
 	100% {
-		transform: translate3d(3px, 0, 0);
+		transform: translate3d(6px, 0, 0);
 	}
 }
 
 /* seconde 69 */
-.sound19 iframe {
+.sound22 iframe {
 	animation: shake9 0.5s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 12;
 	transform: translate3d(0, 0, 0);
@@ -1066,6 +1187,14 @@ p.noice {
 	perspective: 1000px;
 	transition: 0.7s;
 }
+
+.sound22 {
+	transition: 1s;
+	background: linear-gradient(90deg, #0f1318 0%, #22272e 30%, white 50%, #22272e 70%, #0f1318 100%);
+	background-size: 400% 400%;
+	animation: leftright 0.3s ease;
+	animation-iteration-count: infinite;
+}	
 
 @keyframes shake9 {
 
@@ -1079,7 +1208,7 @@ p.noice {
 	75%,
 	85%,
 	95% {
-		transform: translate3d(-3px, 0, 0);
+		transform: translate3d(-6px, 0, 0);
 	}
 
 	0%,
@@ -1093,15 +1222,20 @@ p.noice {
 	80%,
 	90%,
 	100% {
-		transform: translate3d(3px, 0, 0);
+		transform: translate3d(6px, 0, 0);
 	}
 }
 
 /* seconde 75 */
-.sound20 p.noice {
+.sound23 p.noice {
 	opacity: 0;
 	transition: 0.5s;
 	font-size: 1em;
+}
+
+.sound23 {
+	background: none;
+	background-color: #0f1318;
 }
 
 iframe {
