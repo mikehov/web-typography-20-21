@@ -533,17 +533,7 @@ You probably want to change the styling.
 	/* transition: 0s 1.3s; */
 }
 
-/* **********************************************
-Sounds.
-	You can style the whole body, or you can 
-	style anything within the body the moment
-	a sound starts.
-*********************************************  */
-
-/* The moment the class .sound1 is added to the body, the background is yellow */
-/* .sound1 {
-	background: yellow;
-} */
+/* ------------------ SCENE 1 ------------------ */
 
 body {
 	background-color: #0f1318;
@@ -572,7 +562,7 @@ p.alarm {
 	transition: 0.5s;
 }
 
-p.noice {
+p.noise {
 	opacity: 0;
 	position: absolute;
 	transition: 0.5s;
@@ -594,6 +584,18 @@ p.siren {
 p.action {
 	opacity: 1;
 	color: white;
+}
+
+p.mysterious {
+	opacity: 0;
+	color: white;
+	position: absolute;
+}
+
+p.detection {
+	opacity: 0;
+	color: white;
+	position: absolute;
 }
 
 .sound1 p.action {
@@ -912,11 +914,11 @@ p.action {
 	display: none;
 }
 
-.sound17 p.noice {
+.sound17 p.noise {
 	display: block;
 }
 
-.sound17 p.noice {
+.sound17 p.noise {
 	opacity: 1;
 	transition: 0.5s;
 
@@ -1227,7 +1229,7 @@ p.action {
 }
 
 /* seconde 75 */
-.sound23 p.noice {
+.sound23 p.noise {
 	opacity: 0;
 	transition: 0.5s;
 	font-size: 1em;
@@ -1236,6 +1238,302 @@ p.action {
 .sound23 {
 	background: none;
 	background-color: #0f1318;
+}
+
+
+
+/* ------------------ SCENE 2 ------------------ */
+
+.sound24 p.mysterious {
+	opacity: 1;
+	transition: 0.5s;
+	top: 0;
+}
+
+.sound25 p.mysterious {
+	top: -35px;
+	transition: 0.5s;
+}
+
+.sound25 p.noise {
+	top: 0px;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.sound25 iframe {
+	animation: shake5 2.5s cubic-bezier(.36, .07, .19, .97) both;
+	animation-iteration-count: infinite;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+	transition: 0.7s;
+}
+
+.sound25 {
+	transition: 1s;
+	background: linear-gradient(90deg, #0f1318 0%, #22272e 45%, white 50%, #22272e 55%, #0f1318 100%);
+	background-size: 400% 400%;
+	animation: leftright 4s ease;
+	animation-iteration-count: infinite;
+}	
+
+@keyframes constantshake10 {
+
+	5%,
+	15%,
+	25%,
+	35%,
+	45%,
+	55%,
+	65%,
+	75%,
+	85%,
+	95% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	0%,
+	10%,
+	20%,
+	30%,
+	40%,
+	50%,
+	60%,
+	70%,
+	80%,
+	90%,
+	100% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
+.sound26 .voice1 {
+	/* animation: biggertext 1s;
+	animation-iteration-count: 1; */
+}
+
+.sound26 .p54 span {
+	opacity: 1;
+	transition: 0s;
+	animation: biggertext2 1s;
+	animation-iteration-count: 1;
+}
+
+@keyframes biggertext2 {
+
+	0% {
+		font-size: 1em;
+	}
+
+	100%
+	{
+		font-size: 0.5em;
+		opacity: 0;
+	}
+}
+
+.sound26 .p54 span:nth-of-type(12) {
+	opacity: 1;
+	transition: 0s;
+	animation: biggertext3 1s;
+	animation-iteration-count: 1;
+}
+
+@keyframes biggertext3 {
+
+	0% {
+		font-size: 1em;
+	}
+
+	100%
+	{
+		font-size: 2em;
+	}
+}
+
+.sound27 p.detection {
+	opacity: 1;
+	color: rgb(90, 230, 125);
+	position: absolute;
+	transition: 0.5s;
+}
+
+.sound27 iframe {
+	/* opacity: 0; */
+	/* color: rgb(90, 230, 125); */
+	/* position: absolute; */
+	transition: 1s;
+	/* box-shadow: rgb(90, 230, 125) 0px 0px 30px; */
+
+	animation: detection 1.2s ease;
+	animation-iteration-count: 1;
+}
+
+@keyframes detection {
+	20%,
+	60%,
+	100%
+	{
+		box-shadow: rgb(90, 230, 125) 0px 0px 0px;
+	}
+	0%,
+	40%,
+	80%
+	{
+		box-shadow: rgb(90, 230, 125) 0px 0px 50px;
+	}
+}
+
+.sound28 iframe {
+	animation: constantshake11 1.5s cubic-bezier(.36, .07, .19, .97) both;
+	animation-iteration-count: infinite;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+	transition: 0.7s;
+}
+
+.sound28 {
+	transition: 1s;
+	background: linear-gradient(90deg, #0f1318 0%, #22272e 40%, white 50%, #22272e 55%, #0f1318 100%);
+	background-size: 400% 400%;
+	animation: leftright 2s ease;
+	animation-iteration-count: infinite;
+}	
+
+@keyframes constantshake11 {
+
+	5%,
+	15%,
+	25%,
+	35%,
+	45%,
+	55%,
+	65%,
+	75%,
+	85%,
+	95% {
+		transform: translate3d(-5px, 0, 0);
+	}
+
+	0%,
+	10%,
+	20%,
+	30%,
+	40%,
+	50%,
+	60%,
+	70%,
+	80%,
+	90%,
+	100% {
+		transform: translate3d(5px, 0, 0);
+	}
+}
+
+.sound27 p.noise {
+	top: -45px;
+	transition: 0.5s;
+}
+
+.sound27 p.mysterious {
+	top: -80px;
+	transition: 0.5s;
+}
+
+.sound28 p.detection {
+	opacity: 0;
+}
+
+.sound28 p.noise {
+	top: 0;
+	transition: 0.5s;
+}
+
+.sound28 p.mysterious {
+	top: -35px;
+	transition: 0.5s;
+}
+
+.sound29 iframe {
+	animation: constantshake11 1s cubic-bezier(.36, .07, .19, .97) both;
+	animation-iteration-count: infinite;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+	transition: 0.7s;
+}
+
+.sound29 {
+	transition: 1s;
+	background: linear-gradient(90deg, #0f1318 0%, #22272e 30%, white 50%, #22272e 70%, #0f1318 100%);
+	background-size: 400% 400%;
+	animation: leftright 0.9s ease;
+	animation-iteration-count: infinite;
+}	
+
+.sound30 iframe {
+	animation: constantshake11 1s cubic-bezier(.36, .07, .19, .97) both;
+	animation-iteration-count: infinite;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+	transition: 0.7s;
+}
+
+.sound30 {
+	background: linear-gradient(90deg, #0f1318 0%, #22272e 30%, white 50%, #22272e 70%, #0f1318 100%);
+	background-size: 400% 400%;
+	animation: leftright 0.4s ease;
+	animation-iteration-count: infinite;
+}	
+
+@keyframes constantshake11 {
+
+	5%,
+	15%,
+	25%,
+	35%,
+	45%,
+	55%,
+	65%,
+	75%,
+	85%,
+	95% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	0%,
+	10%,
+	20%,
+	30%,
+	40%,
+	50%,
+	60%,
+	70%,
+	80%,
+	90%,
+	100% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
+.sound31 iframe, .sound31 {
+	transition: 1s;
+	animation: none;
+}
+
+.sound31 p.noise {
+	opacity: 0;
+}
+
+.sound31 p.mysterious {
+	top: 0;
+}
+
+.sound32 p.mysterious {
+	opacity: 0;
 }
 
 iframe {
@@ -1261,7 +1559,7 @@ iframe {
 
 
 
-/* AANGEPAST */
+/* Gecentreerde achtergrond */
 
 body {
 	min-height: 100vh;
@@ -1275,73 +1573,6 @@ body {
 	text-align: center;
 	width: 60%;
 }
-
-/* .p0 span {
-	opacity: 0;
-	font-family: brenner;
-}
-.p0.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-weight: 200;
-}
-.p0.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0s .4s;
-	margin-right: -.25em;
-	font-weight: 400;
-}
-.p0.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0s .5s;
-	margin-right: -.25em;
-	font-weight: 600;
-}
-.p0.on span:nth-of-type(4) {
-	opacity: 1;
-	transition: 0s .7s;
-	margin-right: -.25em;
-	font-weight: 800;
-}
-.p0.on span:nth-of-type(5) {
-	opacity: 1;
-	transition: 0s 1.1s;
-	margin-right: -.25em;
-	font-family: "brenner sans";
-}
-.p0.on span:nth-of-type(6) {
-	opacity: 1;
-	transition: 0s 1.4s;
-	margin-right: -.25em;
-	font-family: "brenner display";
-}
-.p0.on span:nth-of-type(7) {
-	opacity: 1;
-	transition: 0s 1.7s;
-	margin-right: -.25em;
-	font-family: "brenner script";
-}
-.p0.on span:nth-of-type(8) {
-	opacity: 1;
-	transition: 0s 2s;
-	font-family: "brenner script";
-}
-.p0.on span:nth-of-type(9) {
-	opacity: 1;
-	transition: 0s 3s;
-	font-family: "brenner Sans condensed";
-}
-.p0.on span:nth-of-type(10) {
-	opacity: 1;
-	transition: 0s 3.2s;
-	font-family: "brenner mono";
-}
-.p0.on span:nth-of-type(11) {
-	opacity: 1;
-	transition: 0s 3.7s;
-	font-family: "brenner slab";
-} */
-
 
 /*Bronnen*/
 /*https://css-tricks.com/snippets/css/shake-css-keyframe-animation/*/
