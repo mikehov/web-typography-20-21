@@ -1,9 +1,3 @@
-/* .html, body, .centreren-fix {
-	width:100%;
-	height:100%;
-} */
-
-
 /* **********************************************
 Basic mechanics
 Hide all paragraphs by default
@@ -11,10 +5,14 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
+
+	text-align: center;
+	width: 60%;
 }
 
 #closed-captions .on {
@@ -43,10 +41,9 @@ Feel free to adjust the defaults to your needs.
 	font-family: "Brenner Sans";
 }
 
-
-/* Officer */
+/* Robot */
 .voice4 {
-	
+
 }
 
 /* **********************************************
@@ -57,6 +54,10 @@ The first paragraph, with extended timing for
 	spoken.
 You probably want to change the styling.
 ********************************************** */
+
+
+/* ------------------ DETAILED SENTENCES ------------------ */
+
 .p0 span {
 	opacity: 0;
 	font-family: "Brenner Mono Regular Italic";
@@ -71,62 +72,53 @@ You probably want to change the styling.
 /*K*/
 .p0.on span:nth-of-type(2) {
 	opacity: 1;
-	/* transition: 0s .4s; */
 	margin-right: -0.6em;
 }
 
 /*D*/
 .p0.on span:nth-of-type(3) {
 	opacity: 1;
-	/* transition: 0s .5s; */
 	margin-right: -0.6em;
 }
 
 /*6*/
 .p0.on span:nth-of-type(4) {
 	opacity: 1;
-	/* transition: 0s .7s; */
 	margin-right: -0.6em;
 }
 
 /*-*/
 .p0.on span:nth-of-type(5) {
 	opacity: 1;
-	/* transition: 0s 1.1s; */
 	margin-right: -0.6em;
 }
 
 /*3*/
 .p0.on span:nth-of-type(6) {
 	opacity: 1;
-	/* transition: 0s 1.4s; */
 	margin-right: -0.8em;
 }
 
 /*.*/
 .p0.on span:nth-of-type(7) {
 	opacity: 1;
-	/* transition: 0s 1.7s; */
 	margin-right: -0.8em;
 }
 
 /*7*/
 .p0.on span:nth-of-type(8) {
 	opacity: 1;
-	/* transition: 0s 2s; */
 	margin-right: -0.8em;
 }
 
 /*.*/
 .p0.on span:nth-of-type(9) {
 	opacity: 1;
-	/* transition: 0s 2.3s; */
 }
 
 /*Let's*/
 .p0.on span:nth-of-type(10) {
 	opacity: 1;
-	/* transition: 0s 3s; */
 }
 
 /*begin.*/
@@ -142,205 +134,6 @@ You probably want to change the styling.
 }
 
 /* ********************************************* */
-
-.p1 span {
-	opacity: 0;
-	font-family: "Brenner Sans";
-}
-
-/*Yes,*/
-.p1.on span:first-of-type {
-	opacity: 1;
-	/* transition: 0s; */
-}
-
-/*sir*/
-.p1.on span:nth-of-type(2) {
-	opacity: 1;
-	/* transition: 0s .4s; */
-}
-
-/*ALARM*/
-/* .p1.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0s 1s;
-	font-family: "Brenner Sans Bold";
-	color: #C1292E;
-} */
-
-/* ********************************************* */
-.p2 span {
-	opacity: 0;
-	font-family: "Brenner Mono Regular Italic";
-}
-
-/*Recite*/
-.p2.on span:first-of-type {
-	opacity: 1;
-	/* transition: 0s; */
-}
-
-/*your*/
-.p2.on span:nth-of-type(2) {
-	opacity: 1;
-	/* transition: 0s 0.3s; */
-}
-
-/*baseline*/
-.p2.on span:nth-of-type(3) {
-	opacity: 1;
-	/* transition: 0s 0.5s; */
-}
-
-/* ********************************************* */
-.p3 span {
-	opacity: 0;
-	font-family: "Brenner Sans";
-	transition: 0s;
-}
-
-/*And*/
-.p3.on span:first-of-type {
-	opacity: 1;
-	/* transition: 0s; */
-}
-
-/*blood-black*/
-.p3.on span:nth-of-type(2) {
-	opacity: 1;
-	/* transition: 0s 0.3s; */
-}
-
-/*nothingness*/
-.p3.on span:nth-of-type(3) {
-	opacity: 1;
-	/* transition: 0s 0.5s; */
-}
-
-/*began*/
-.p3.on span:nth-of-type(4) {
-	opacity: 1;
-	/* transition: 0s 0.7s; */
-}
-
-/*to*/
-.p3.on span:nth-of-type(5) {
-	opacity: 1;
-	/* transition: 0s 0.9s; */
-}
-
-/*spin*/
-.p3.on span:nth-of-type(6) {
-	opacity: 1;
-	/* transition: 0s 1.1s; */
-}
-
-.p3.on span:nth-of-type(7) {
-	opacity: 1;
-	/* transition: 0s 1.3s; */
-	font-family: "Brenner Sans Bold";
-	color: #C1292E;
-}
-
-/* ********************************************* */
-.p4 span {
-	opacity: 0;
-	font-family: "Brenner Sans";
-	transition: 0s;
-}
-
-/*A*/
-.p4.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-}
-
-/*system*/
-.p4.on span:nth-of-type(2) {
-	opacity: 1;
-	/* transition: 0s 0.3s; */
-}
-
-/*of*/
-.p4.on span:nth-of-type(3) {
-	opacity: 1;
-	/* transition: 0s 0.5s; */
-}
-
-/*cells*/
-.p4.on span:nth-of-type(4) {
-	opacity: 1;
-	/* transition: 0s 0.7s; */
-}
-
-/*interlinked*/
-.p4.on span:nth-of-type(5) {
-	opacity: 1;
-	/* transition: 0s 0.9s; */
-}
-
-/*within*/
-.p4.on span:nth-of-type(6) {
-	opacity: 1;
-	/* transition: 0s 1.1s; */
-}
-
-/*cells,*/
-.p4.on span:nth-of-type(7) {
-	opacity: 1;
-	/* transition: 0s 1.3s; */
-}
-
-/* ********************************************* */
-.p5 span {
-	opacity: 0;
-	font-family: "Brenner Sans";
-	transition: 0s;
-}
-
-/*interlinked*/
-.p5.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-}
-
-/*within*/
-.p5.on span:nth-of-type(2) {
-	opacity: 1;
-	/* transition: 0s 0.3s; */
-}
-
-/*cells,*/
-.p5.on span:nth-of-type(3) {
-	opacity: 1;
-	/* transition: 0s 0.5s; */
-}
-
-/*interlinked*/
-.p5.on span:nth-of-type(4) {
-	opacity: 1;
-	/* transition: 0s 0.7s; */
-}
-
-/*within*/
-.p5.on span:nth-of-type(5) {
-	opacity: 1;
-	/* transition: 0s 0.9s; */
-}
-
-/*one*/
-.p5.on span:nth-of-type(6) {
-	opacity: 1;
-	/* transition: 0s 1.1s; */
-}
-
-/*stem.*/
-.p5.on span:nth-of-type(7) {
-	opacity: 1;
-	/* transition: 0s 1.3s; */
-}
-
-/* ********************************************* */
 .p6 span {
 	opacity: 0;
 	font-family: "Brenner Sans";
@@ -348,192 +141,36 @@ You probably want to change the styling.
 	font-size: 0.5em;
 }
 
-/*Fuck*/
+/*Whispers:*/
 .p6.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-size: 1em;
 }
 
-/*off*/
+/*Fuck*/
 .p6.on span:nth-of-type(2) {
 	opacity: 1;
-	/* transition: 0s 0.3s; */
 	font-size: 1em;
-
 }
 
-/*skin-job!*/
+/*off*/
 .p6.on span:nth-of-type(3) {
 	opacity: 1;
-	/* transition: 0s 0.5s; */
 	font-size: 1em;
 }
 
 /*skin-job!*/
 .p6.on span:nth-of-type(4) {
 	opacity: 1;
-	/* transition: 0s 0.5s; */
 	font-size: 1em;
 }
 
 /* ********************************************* */
-.p7 span {
-	opacity: 0;
-	font-family: "Brenner Sans";
-	transition: 0s;
-}
 
-/*And*/
-.p7.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-}
 
-/*dreadfully*/
-.p7.on span:nth-of-type(2) {
-	opacity: 1;
-	/* transition: 0s 0.3s; */
-}
 
-/*distrinct*/
-.p7.on span:nth-of-type(3) {
-	opacity: 1;
-	/* transition: 0s 0.5s; */
-}
-
-/*against*/
-.p7.on span:nth-of-type(4) {
-	opacity: 1;
-	/* transition: 0s 0.7s; */
-}
-
-/*the*/
-.p7.on span:nth-of-type(5) {
-	opacity: 1;
-	/* transition: 0s 0.9s; */
-}
-
-/*dark*/
-.p7.on span:nth-of-type(6) {
-	opacity: 1;
-	/* transition: 0s 1.1s; */
-}
-
-/*a*/
-.p7.on span:nth-of-type(7) {
-	opacity: 1;
-	/* transition: 0s 1.3s; */
-}
-
-/*tall*/
-.p7.on span:nth-of-type(8) {
-	opacity: 1;
-	/* transition: 0s 1.5s; */
-}
-
-/*white*/
-.p7.on span:nth-of-type(9) {
-	opacity: 1;
-	/* transition: 0s 1.7s; */
-}
-
-/*fountain*/
-.p7.on span:nth-of-type(10) {
-	opacity: 1;
-	/* transition: 0s 1.9s; */
-}
-
-/*played...*/
-.p7.on span:nth-of-type(11) {
-	opacity: 1;
-	/* transition: 0s 2.1s; */
-}
-
-/*ALARM*/
-.p7.on span:nth-of-type(12) {
-	opacity: 1;
-	/* transition: 0s 2.3s; */
-	font-family: "Brenner Sans Bold";
-	color: #C1292E;
-}
-
-/* ********************************************* */
-.p8 span {
-	opacity: 0;
-	font-family: "Brenner Mono";
-	transition: 0s;
-}
-
-/*Cells.*/
-.p8.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-}
-
-/* ********************************************* */
-.p9 span {
-	opacity: 0;
-	font-family: "Brenner Sans";
-	transition: 0s;
-}
-
-/*Cells.*/
-.p9.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-}
-
-/* ********************************************* */
-.p10 span {
-	opacity: 0;
-	font-family: "Brenner Mono";
-	transition: 0s;
-}
-
-/*Have*/
-.p10.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-}
-
-/*you*/
-.p10.on span:nth-of-type(2) {
-	opacity: 1;
-	/* transition: 0s 0.3s; */
-}
-
-/*ever*/
-.p10.on span:nth-of-type(3) {
-	opacity: 1;
-	/* transition: 0s 0.5s; */
-}
-
-/*been*/
-.p10.on span:nth-of-type(4) {
-	opacity: 1;
-	/* transition: 0s 0.7s; */
-}
-
-/*in*/
-.p10.on span:nth-of-type(5) {
-	opacity: 1;
-	/* transition: 0s 0.9s; */
-}
-
-/*an*/
-.p10.on span:nth-of-type(6) {
-	opacity: 1;
-	/* transition: 0s 1.1s; */
-}
-
-/*institution?*/
-.p10.on span:nth-of-type(7) {
-	opacity: 1;
-	/* transition: 0s 1.3s; */
-}
-
-/* ------------------ SCENE 1 ------------------ */
+/* ------------------ GENERAL TEXT AND BODY STYLING ------------------ */
 
 body {
 	background-color: #0f1318;
@@ -541,8 +178,19 @@ body {
 	color: white;
 	font-family: Brenner Sans;
 	text-align: center;
+
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
+iframe {
+	transition: 1s;
+	width: 60vw;
+	height: 60vh;
+}
 
 .texts {
 	height: 3em;
@@ -577,12 +225,8 @@ p.siren {
 	transition: 0.5s;
 }
 
-p.siren {
-	opacity: 0;
-}
-
 p.action {
-	opacity: 1;
+	opacity: 0;
 	color: white;
 }
 
@@ -598,61 +242,76 @@ p.detection {
 	position: absolute;
 }
 
+/* ********************************************* */
+
+
+
+/* ------------------ SCENE 1 ------------------ */
+
+/* 0th Second */
+.sound0 p.action {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+/* 9th Second */
 .sound1 p.action {
 	opacity: 0;
 	transition: 0.3s;
 }
 
-/* seconde 9 */
+/* 9th Second */
 .sound1 p.alarm {
 	opacity: 1;
 	transition: 1s;
 	font-size: 1.8em;
 }
 
-/* seconde 10 */
-.sound2 p.alarm {
+/* 9th Second */
+.sound2 iframe {
+	box-shadow: rgb(235, 59, 59) 0px 0px 100px;
+}
+
+/* 10th Second */
+.sound3 iframe {
+	box-shadow: none;
+}
+
+/* 10th Second */
+.sound4 p.alarm {
 	opacity: 0;
 	transition: 0.5s;
 	font-size: 1.4em;
 }
 
-/* seconde 9 */
-.sound3 iframe {
-	box-shadow: rgb(235, 59, 59) 0px 0px 100px;
-}
-
-/* seconde 10 */
-.sound4 iframe {
-	box-shadow: none;
-}
-
-/* seconde 12 */
+/* 12th Second */
 .sound5 iframe {
 	box-shadow: rgb(21, 62, 245)0px 0px 50px;
 }
 
+/* 12th Second */
 .sound5 p.siren {
 	font-size: 1.8em;
 	opacity: 1;
 }
 
-/* seconde 13 */
+/* 13th Second */
 .sound6 iframe {
 	box-shadow: none;
 }
 
+/* 13th Second */
 .sound6 p.siren {
 	opacity: 0;
 	font-size: 1.4em;
 }
 
-/* seconde 15.3 */
+/* 13th Second */
 .sound7 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 30px;
 }
 
-/* seconde 15.3 */
+/* 15.3th Second */
 .sound7 p.alarm {
 	opacity: 1;
 	transition: 1s;
@@ -662,7 +321,7 @@ p.detection {
 	font-size: 1.8em;
 }
 
-/* seconde 16.3 */
+/* 16.3th Second */
 .sound8 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 150px;
 	animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
@@ -716,18 +375,19 @@ p.detection {
 	}
 }
 
-/* seconde 17 */
+/* 17th Second */
 .sound9 p.alarm {
 	opacity: 0;
 	transition: 0.5s;
 	font-size: 1.4em;
 }
 
-/* seconde 17 */
+/* 17th Second */
 .sound9 iframe {
 	box-shadow: none;
 }
 
+/* 23th Second */
 .sound10 .voice3 {
 	animation: biggertext 1s;
 	animation-iteration-count: 1;
@@ -739,17 +399,17 @@ p.detection {
 		font-size: 0em;
 	}
 
-	100%
-	{
+	100% {
 		font-size: 1em;
 	}
 }
 
-/* seconde 24.5 */
+/* 24.5th Second */
 .sound11 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 30px;
 }
 
+/* 24.5th Second */
 .sound11 p.alarm {
 	opacity: 1;
 	transition: 1s;
@@ -759,7 +419,7 @@ p.detection {
 	font-size: 1.8em;
 }
 
-/* seconde 25.5 */
+/* 25.5th Second */
 .sound12 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 150px;
 	animation: shake2 0.82s cubic-bezier(.36, .07, .19, .97) both;
@@ -813,23 +473,24 @@ p.detection {
 	}
 }
 
-/* seconde 26.2 */
+/* 26.2th Second */
 .sound13 iframe {
 	box-shadow: none;
 }
 
-/* seconde 26.2 */
+/* 26.2th Second */
 .sound13 p.alarm {
 	opacity: 0;
 	transition: 0.5s;
 	font-size: 1.4em;
 }
 
-/* seconde 24.5 */
+/* 31th Second */
 .sound14 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 30px;
 }
 
+/* 31th Second */
 .sound14 p.alarm {
 	opacity: 1;
 	transition: 1s;
@@ -839,7 +500,7 @@ p.detection {
 	font-size: 1.8em;
 }
 
-/* seconde 25.5 */
+/* 32th Second */
 .sound15 iframe {
 	box-shadow: rgb(235, 59, 59) 0px 0px 150px;
 	animation: shake3 0.82s cubic-bezier(.36, .07, .19, .97) both;
@@ -893,31 +554,29 @@ p.detection {
 	}
 }
 
-/* seconde 26.2 */
+/* 32.7th Second */
 .sound16 iframe {
 	box-shadow: none;
 }
 
-/* seconde 26.2 */
+/* 32.7th Second */
 .sound16 p.alarm {
 	opacity: 0;
 	transition: 0.5s;
 	font-size: 1.4em;
 }
 
-
-/* SCENE 2 */
-
-/* seconde 33 */
-
+/* 33th Second */
 .sound17 p.alarm {
 	display: none;
 }
 
+/* 33th Second */
 .sound17 p.noise {
 	display: block;
 }
 
+/* 33th Second */
 .sound17 p.noise {
 	opacity: 1;
 	transition: 0.5s;
@@ -927,7 +586,7 @@ p.detection {
 	font-size: 1em;
 }
 
-/* seconde 33 */
+/* 33th Second */
 .sound17 iframe {
 	animation: shake4 5s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 2;
@@ -967,28 +626,31 @@ p.detection {
 	}
 }
 
+/* 33th Second */
 .sound17 {
 	transition: 1s;
 	background: linear-gradient(90deg, #0f1318 0%, #22272e 45%, white 50%, #22272e 55%, #0f1318 100%);
 	background-size: 400% 400%;
 	animation: leftright 5s ease;
 	animation-iteration-count: infinite;
-}	
+}
 
 @keyframes leftright {
 
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
 }
 
-/* seconde 4 3 */
+/* 43th Second */
 .sound18 iframe {
 	animation: shake5 2s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 3;
@@ -998,13 +660,14 @@ p.detection {
 	transition: 0.7s;
 }
 
+/* 43th Second */
 .sound18 {
 	transition: 1s;
 	background: linear-gradient(90deg, #0f1318 0%, #22272e 45%, white 50%, #22272e 55%, #0f1318 100%);
 	background-size: 400% 400%;
 	animation: leftright 4s ease;
 	animation-iteration-count: infinite;
-}	
+}
 
 @keyframes shake5 {
 
@@ -1036,7 +699,7 @@ p.detection {
 	}
 }
 
-/* seconde 49 */
+/* 49th Second */
 .sound19 iframe {
 	animation: shake6 1.8s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 5;
@@ -1046,13 +709,14 @@ p.detection {
 	transition: 0.7s;
 }
 
+/* 49th Second */
 .sound19 {
 	transition: 1s;
 	background: linear-gradient(90deg, #0f1318 0%, #22272e 45%, white 50%, #22272e 55%, #0f1318 100%);
 	background-size: 400% 400%;
 	animation: leftright 3s ease;
 	animation-iteration-count: infinite;
-}	
+}
 
 @keyframes shake6 {
 
@@ -1084,7 +748,7 @@ p.detection {
 	}
 }
 
-/* seconde 58 */
+/* 58th Second */
 .sound20 iframe {
 	animation: shake7 0.7s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 8;
@@ -1094,13 +758,14 @@ p.detection {
 	transition: 0.7s;
 }
 
+/* 58th Second */
 .sound20 {
 	transition: 1s;
 	background: linear-gradient(90deg, #0f1318 0%, #22272e 40%, white 50%, #22272e 60%, #0f1318 100%);
 	background-size: 400% 400%;
 	animation: leftright 2s ease;
 	animation-iteration-count: infinite;
-}	
+}
 
 @keyframes shake7 {
 
@@ -1132,7 +797,7 @@ p.detection {
 	}
 }
 
-/* seconde 63.6 */
+/* 63.6th Second */
 .sound21 iframe {
 	animation: shake8 0.7s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 8;
@@ -1142,13 +807,14 @@ p.detection {
 	transition: 0.7s;
 }
 
+/* 63.6th Second */
 .sound21 {
 	transition: 1s;
 	background: linear-gradient(90deg, #0f1318 0%, #22272e 40%, white 50%, #22272e 60%, #0f1318 100%);
 	background-size: 400% 400%;
 	animation: leftright 1s ease;
 	animation-iteration-count: infinite;
-}	
+}
 
 @keyframes shake8 {
 
@@ -1180,7 +846,7 @@ p.detection {
 	}
 }
 
-/* seconde 69 */
+/* 69th Second */
 .sound22 iframe {
 	animation: shake9 0.5s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: 12;
@@ -1190,13 +856,14 @@ p.detection {
 	transition: 0.7s;
 }
 
+/* 69th Second */
 .sound22 {
 	transition: 1s;
 	background: linear-gradient(90deg, #0f1318 0%, #22272e 30%, white 50%, #22272e 70%, #0f1318 100%);
 	background-size: 400% 400%;
 	animation: leftright 0.3s ease;
 	animation-iteration-count: infinite;
-}	
+}
 
 @keyframes shake9 {
 
@@ -1228,39 +895,46 @@ p.detection {
 	}
 }
 
-/* seconde 75 */
+/* 75th Second */
 .sound23 p.noise {
 	opacity: 0;
 	transition: 0.5s;
 	font-size: 1em;
 }
 
+/* 75th Second */
 .sound23 {
 	background: none;
 	background-color: #0f1318;
 }
 
+/* ********************************************* */
+
 
 
 /* ------------------ SCENE 2 ------------------ */
 
+/* 86th Second */
 .sound24 p.mysterious {
 	opacity: 1;
 	transition: 0.5s;
 	top: 0;
 }
 
+/* 88th Second */
 .sound25 p.mysterious {
 	top: -35px;
 	transition: 0.5s;
 }
 
+/* 88th Second */
 .sound25 p.noise {
 	top: 0px;
 	opacity: 1;
 	transition: 0.5s;
 }
 
+/* 88th Second */
 .sound25 iframe {
 	animation: shake5 2.5s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: infinite;
@@ -1270,49 +944,16 @@ p.detection {
 	transition: 0.7s;
 }
 
+/* 88th Second */
 .sound25 {
 	transition: 1s;
 	background: linear-gradient(90deg, #0f1318 0%, #22272e 45%, white 50%, #22272e 55%, #0f1318 100%);
 	background-size: 400% 400%;
 	animation: leftright 4s ease;
 	animation-iteration-count: infinite;
-}	
-
-@keyframes constantshake10 {
-
-	5%,
-	15%,
-	25%,
-	35%,
-	45%,
-	55%,
-	65%,
-	75%,
-	85%,
-	95% {
-		transform: translate3d(-4px, 0, 0);
-	}
-
-	0%,
-	10%,
-	20%,
-	30%,
-	40%,
-	50%,
-	60%,
-	70%,
-	80%,
-	90%,
-	100% {
-		transform: translate3d(4px, 0, 0);
-	}
 }
 
-.sound26 .voice1 {
-	/* animation: biggertext 1s;
-	animation-iteration-count: 1; */
-}
-
+/* 99.3th Second */
 .sound26 .p54 span {
 	opacity: 1;
 	transition: 0s;
@@ -1326,13 +967,13 @@ p.detection {
 		font-size: 1em;
 	}
 
-	100%
-	{
+	100% {
 		font-size: 0.5em;
 		opacity: 0;
 	}
 }
 
+/* 99.3th Second */
 .sound26 .p54 span:nth-of-type(12) {
 	opacity: 1;
 	transition: 0s;
@@ -1346,12 +987,12 @@ p.detection {
 		font-size: 1em;
 	}
 
-	100%
-	{
+	100% {
 		font-size: 2em;
 	}
 }
 
+/* 103th Second */
 .sound27 p.detection {
 	opacity: 1;
 	color: rgb(90, 230, 125);
@@ -1359,6 +1000,7 @@ p.detection {
 	transition: 0.5s;
 }
 
+/* 103th Second */
 .sound27 iframe {
 	/* opacity: 0; */
 	/* color: rgb(90, 230, 125); */
@@ -1371,22 +1013,34 @@ p.detection {
 }
 
 @keyframes detection {
+
 	20%,
 	60%,
-	100%
-	{
+	100% {
 		box-shadow: rgb(90, 230, 125) 0px 0px 0px;
 	}
+
 	0%,
 	40%,
-	80%
-	{
+	80% {
 		box-shadow: rgb(90, 230, 125) 0px 0px 50px;
 	}
 }
 
+.sound27 p.noise {
+	top: -45px;
+	transition: 0.5s;
+}
+
+.sound27 p.mysterious {
+	top: -80px;
+	transition: 0.5s;
+}
+
+
+/* 104.5th Second */
 .sound28 iframe {
-	animation: constantshake11 1.5s cubic-bezier(.36, .07, .19, .97) both;
+	animation: shake11 1.5s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: infinite;
 	transform: translate3d(0, 0, 0);
 	backface-visibility: hidden;
@@ -1394,15 +1048,16 @@ p.detection {
 	transition: 0.7s;
 }
 
+/* 104.5th Second */
 .sound28 {
 	transition: 1s;
 	background: linear-gradient(90deg, #0f1318 0%, #22272e 40%, white 50%, #22272e 55%, #0f1318 100%);
 	background-size: 400% 400%;
 	animation: leftright 2s ease;
 	animation-iteration-count: infinite;
-}	
+}
 
-@keyframes constantshake11 {
+@keyframes shake11 {
 
 	5%,
 	15%,
@@ -1432,32 +1087,26 @@ p.detection {
 	}
 }
 
-.sound27 p.noise {
-	top: -45px;
-	transition: 0.5s;
-}
-
-.sound27 p.mysterious {
-	top: -80px;
-	transition: 0.5s;
-}
-
+/* 104.5th Second */
 .sound28 p.detection {
 	opacity: 0;
 }
 
+/* 104.5th Second */
 .sound28 p.noise {
 	top: 0;
 	transition: 0.5s;
 }
 
+/* 104.5th Second */
 .sound28 p.mysterious {
 	top: -35px;
 	transition: 0.5s;
 }
 
+/* 113th Second */
 .sound29 iframe {
-	animation: constantshake11 1s cubic-bezier(.36, .07, .19, .97) both;
+	animation: shake11 1s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: infinite;
 	transform: translate3d(0, 0, 0);
 	backface-visibility: hidden;
@@ -1465,16 +1114,18 @@ p.detection {
 	transition: 0.7s;
 }
 
+/* 113th Second */
 .sound29 {
 	transition: 1s;
 	background: linear-gradient(90deg, #0f1318 0%, #22272e 30%, white 50%, #22272e 70%, #0f1318 100%);
 	background-size: 400% 400%;
 	animation: leftright 0.9s ease;
 	animation-iteration-count: infinite;
-}	
+}
 
+/* 126th Second */
 .sound30 iframe {
-	animation: constantshake11 1s cubic-bezier(.36, .07, .19, .97) both;
+	animation: shake11 1s cubic-bezier(.36, .07, .19, .97) both;
 	animation-iteration-count: infinite;
 	transform: translate3d(0, 0, 0);
 	backface-visibility: hidden;
@@ -1482,14 +1133,15 @@ p.detection {
 	transition: 0.7s;
 }
 
+/* 126th Second */
 .sound30 {
 	background: linear-gradient(90deg, #0f1318 0%, #22272e 30%, white 50%, #22272e 70%, #0f1318 100%);
 	background-size: 400% 400%;
 	animation: leftright 0.4s ease;
 	animation-iteration-count: infinite;
-}	
+}
 
-@keyframes constantshake11 {
+@keyframes shake11 {
 
 	5%,
 	15%,
@@ -1519,60 +1171,32 @@ p.detection {
 	}
 }
 
-.sound31 iframe, .sound31 {
+/* 129.5th Second */
+.sound31 iframe,
+.sound31 {
 	transition: 1s;
 	animation: none;
 }
 
+/* 129.5th Second */
 .sound31 p.noise {
 	opacity: 0;
 }
 
+/* 129.5th Second */
 .sound31 p.mysterious {
 	top: 0;
 }
 
+/* 135th Second */
 .sound32 p.mysterious {
 	opacity: 0;
 }
 
-iframe {
-	transition: 1s;
-	width: 60vw;
-	height: 60vh;
-}
+/* ********************************************* */
 
 
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
-
-/* .sound1 iframe {
-	transform: rotate(1turn);
-} */
-
-
-
-
-
-
-
-
-
-
-
-/* Gecentreerde achtergrond */
-
-body {
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-#closed-captions p {
-	text-align: center;
-	width: 60%;
-}
 
 /*Bronnen*/
-/*https://css-tricks.com/snippets/css/shake-css-keyframe-animation/*/
+/*Drasner, S. (2015, 24 augustus). “Shake” CSS Keyframe Animation. CSS-Tricks. https://css-tricks.com/snippets/css/shake-css-keyframe-animation/*/
+/*Linear Gradient CSS. (z.d.). Linear Gradient CSS. CSS Gradient. Geraadpleegd op 18 maart 2021, van https://cssgradient.io/*/
